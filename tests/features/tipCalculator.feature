@@ -1,13 +1,13 @@
-Feature: Tip Calculator
+Característica: Calculadora de propinas
 
-  Scenario: Calculate a 15% tip
-    Given the total amount is 100
-    When I set the tip percentage to 15
-    Then the tip should be 15
-    And the total should be 115
+  Escenario: Calcular con una propina del 15%
+    Dado que la cantidad total es 100
+    Cuando configuro el porcentaje de propina en 15
+    Entonces la propina debería ser 15
+    Y el total debería ser 115.
 
-  Scenario: Specify the tip percentage
-    Given the total amount is 200
-    When I set the tip percentage to 20
-    Then the tip should be 40
-    And the total should be 240
+  Escenario: especificar el porcentaje de propina
+    Dada la cantidad total es 200
+    Cuando configuro el porcentaje de propina en 20
+    Entonces la propina debería ser 40
+    Y el total debería ser 240.
