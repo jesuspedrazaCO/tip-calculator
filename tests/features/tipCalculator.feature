@@ -11,7 +11,7 @@ Característica: Calculadora de propinas
     Cuando configuro el porcentaje de propina en 20
     Entonces la propina debería ser 40
     Y el total debería ser 240.
-    Hola Gaby
+    
 
 
     
