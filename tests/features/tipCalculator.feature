@@ -3,22 +3,14 @@ Feature: Tip Calculator
     I want to calculate tips and total amounts
     So that I can properly pay at restaurants
 
-    Scenario: Calculate 10% tip on $100
-        Given the total amount is 100
-        When I set the tip percentage to 10
-        Then the tip should be 10
-        And the total should be 110
+  Escenario: Calcular con una propina del 15%
+    Dado que la cantidad total es 100
+    Cuando configuro el porcentaje de propina en 15
+    Entonces la propina debería ser 15
+    Y el total debería ser 115.
 
-    Scenario: Calculate 15% tip on $200
-        Given the total amount is 200
-        When I set the tip percentage to 15
-        Then the tip should be 30
-        And the total should be 230
-
-    Scenario: Calculate 20% tip on $50
-        Given the total amount is 50
-        When I set the tip percentage to 20
-        Then the tip should be 10
-        And the total should be 60
-
-    
+  Escenario: especificar el porcentaje de propina
+    Dada la cantidad total es 200
+    Cuando configuro el porcentaje de propina en 20
+    Entonces la propina debería ser 40
+    Y el total debería ser 240.
