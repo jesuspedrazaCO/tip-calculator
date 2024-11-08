@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const assert = require('assert');
-const { calculateTip } = require('../../src/tipCalculator');
+const { calculateTipWithTotal } = require('../../src/tipCalculator');
 
 let amount, tipPercentage, result;
 
@@ -10,7 +10,7 @@ Given('the total amount is {int}', function (inputAmount) {
 
 When('I set the tip percentage to {int}', function (inputTipPercentage) {
   tipPercentage = inputTipPercentage;
-  result = calculateTip(amount, tipPercentage);
+  result = calculateTipWithTotal(amount, tipPercentage);
 });
 
 Then('the tip should be {int}', function (expectedTip) {
